@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <script src="https://kit.fontawesome.com/c543148dc4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Rock+Salt&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Alessandro Caiazzo Portfolio</title>
+     <link rel="icon" type="image/x-icon" href="assetts/img/favicon-AC.ico">
+  </head>
+  <body>
+
+
+<div class="flag"><a href="ita-leng.html"><img src="assetts/img/ita-flag.png"><h6>Ita</h6></a></div>
+
+<div id="home" class="container-fluid">
+   <dic class="header-container">
+     <div class="animate__animated animate__bounceInDown "><h5>About Me</h5><a href="#about-me"><img src="assetts/img/icona-2.png"  id="ritratto-img" class="img-fluid img-thumbnail" alt="..."></a></div>
+     <div class="animate__animated animate__bounceInDown animate__delay-1s"><h5>My Skills</h5><a href="#hard-skills"><img src="assetts/img/tool.png"  id="piano-img" class="img-fluid img-thumbnail" alt="..."></a></div>
+     <div class="animate__animated animate__bounceInDown animate__delay-2s"><h5>Contact</h5><a href="#contact"><img src="assetts/img/letter.png"  id="contact-img"class="img-fluid img-thumbnail" alt="..."></a></div>
+    <div class="heading-container">
+     <div class="heading-home animate__animated animate__pulse animate__delay-4s"><h1>Alessandro<br> Caiazzo</h1></div>
+     <h4 class="animate__animated animate__backInDown animate__delay-3s">A dreaming soul, a pragmatic person...</h4>
+    </div>
+  </div>
+</div>
+
+<!--navbar-->
+
+
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-light">
+  <button class="navbar-toggler"
+           type="button"
+           data-bs-toggle="collapse"
+           data-bs-target="#toggleMobileMenu"
+           aria-controls="toggleMobileMenu"
+           aria-expanded="false"
+           aria-label="Toggle navigation">
+
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="toggleMobileMenu">
+    <ul class="navbar-nav  text-center">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about-me">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#hard-skills">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+<script>
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-250px";
+  }
+}
+</script>
+
+
+
+<figure id="about-me" class="figure">
+  <img src="assetts/img/mezzo-busto-3.jpg" class="io-ritratto img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+    <img src="assetts/img/mezzo-busto-mobile.jpg" class="ritratto-mobile img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+  <figcaption class="figure-caption"><h3>A bit of myself...</h3>
+  <p>My name is <em><strong>Alessandro Caiazzo</strong></em> and I have worked for 5 years as a supervisor in one of the many Costa Coffee stores in Manchester-UK.
+Working in this company, I have shortly seen the growth of my role alongside my character.
+I was born in 1991 in Naples, city which I have left after many underwhelming and not at all formative work experiences.
+If I were to describe me in few words, <em><strong>curious</strong></em> would be probably the first.
+I get fascination from everything is complex and counterintuitive, I love technical jobs despite having a creative side quite emphasized.
+In my spare time I play the piano and I am particularly interested investigating about geopolitics and science topics in general.
+
+<br><em><strong>Today I study</strong></em> every second free from work to become a <em><strong>Full Stack developer</strong></em>
+and I cannot wait to dive myself in to it and beginning a new exiting career in IT.
+<br>
+<br>
+<br>
+<em><strong>I strongly believe in the internet power as educational and inclusive tool and
+I would love to be part of the process that  will make  news and notions usability more efficient and easy.</strong></em>
+
+
+</p></figcaption>
+</figure>
+
+
+
+
+<section id="hard-skills" class="container-fluid">
+  <div class="heading-skill"><h2>My skills</h2></div>
+<!--cv-->
+<div class="container container-fluid container-cv">
+  <button class="btn btn-cv"
+  type="button"
+  data-bs-toggle="offcanvas"
+  data-bs-target="#offcanvasTop"
+  aria-controls="offcanvasTop">Have a look to my CV</button>
+
+  <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-header">
+      <h5 id="offcanvasTopLabel">CV Alessandro Caiazzo</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <img src="assetts/img/cv-Alessandro-Caiazzo.png" class="cv-img rounded" alt="Curriculum imagine.">
+    </div>
+  </div>
+</div>
+<!--cv-->
+
+  <div class="container container-row container-fluid">
+     <div class="row">
+        <div class="row-head"><h5>Hard Skills</h5></div>
+     <div class="col-md-4"><h3><i class="fa-brands fa-css3-alt  fa-xl"></i></h3>
+     <p>Basic knowledge in CSS</p></div>
+     <div class="col-md-4"><h3><i class="fa-brands fa-html5  fa-xl"></i></h3>
+     <p>Basic knowledge in HTML</p></div>
+     <div class="col-md-4"><h3><i class="fa-solid fa-sliders fa-xl"></i></h3>
+     <p>Reaper & FL-Studio user from many years</p></div>
+   </div>
+
+   <br>
+
+     <div class="row">
+       <div class="row-head"><h5>Soft Skills</h5></div>
+     <div class="col-md-4"><h3><i class="fa-solid fa-users fa-xl"></i></h3>
+     <p>Really motivated and team player</p></div>
+     <div class="col-md-4"><h3><i class="fa-solid fa-comments fa-xl"></i></h3>
+     <p>Comunication and continus feedbacks are a must to me</p></div>
+     <div class="col-md-4"><h3><i class="fa-regular fa-handshake fa-xl"></i></h3>
+     <p>Reliable is probably the first word I would think about me</p></div>
+
+ </div>
+</section>
+
+<div class="sfondo-bottom">
+<div id="contact" class="container-fluid">
+  <h5 class="leave-a-message">Do you have something to tell me?</h5><h5 class="leave-a-message"> Please don't esitate and leave me a message!</h5>
+  <form class="p-5" action="contact-form.php" method="post">
+    <div class="h4 mb-4 text-center contact-me-heading"><h3>Contact Me</h3></div>
+    <input type="text" id="defaultContactFormName" class="form-control mb-4" name="name" placeholder="Name">
+    <input type="text" id="defaultContactFormEmail" class="form-control mb-4"name="Subject" placeholder="E-mail">
+    <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" name="message" placeholder="Message"></textarea>
+    <button class="btn btn-info btn-block btn-light" type="submit" name="submit">Send</button>
+</form>
+</div>
+
+<div id="social" class="text-center">
+        <a type="button" class="light-blue-text mx-2" href="https://www.facebook.com/alessandrocaiazzo91" target="_blank">
+            <i class="fab fa-facebook-f fa-xl"></i>
+        </a>
+        <a type="button" class="light-blue-text mx-2" href="https://www.instagram.com/alexander_woodman/"target="_blank">
+            <i class="fab fa-instagram fa-xl"></i>
+        </a>
+        <a type="button" class="light-blue-text mx-2">
+            <i class="fab fa-linkedin-in fa-xl"></i>
+        </a>
+        <a type="button" class="light-blue-text mx-2" href="https://github.com/alessandro-caiazzo"target="_blank">
+            <i class="fab fa-github fa-xl"></i>
+        </a>
+        <a type="button" class="light-blue-text mx-2" href="https://www.youtube.com/channel/UC6HYg7NJY9tFq6092n_MADw"target="_blank">
+            <i class="fab fa-youtube fa-xl"></i>
+        </a>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  </body>
+</html>
